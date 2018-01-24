@@ -4552,6 +4552,21 @@ label monika_coffee:
     m 3e "It's funny how a drink for giving you energy became a treat for you to enjoy."
     m 1k "Maybe if I find out how, I'll tinker with the script so I can finally drink some! Ahaha~"
     return
+    
+    init 5 python:
+    addEvent(Event(eventlabel='monika_oingoref1',
+                                                            prompt="Who do you want to be today?.",
+                                                            label=None,
+                                                            category=['music'],
+                                                            random=True,
+label monika_oingoref1:
+    m 1d "Who do you want to be today?'"  
+    m 1d "Is that an Oingo Boingo reference?"
+    m 1k "Nah, just punking with you"
+    m 1b "...but I like that band too."
+    m 1b "You must really love music like this from that era, huh?"
+    m 1k "Well,it doesn't have to be new or old to be considered a good song or music."
+    m 1k "Am I right, [player]?"
 
 init 5 python:
     addEvent(Event(eventlabel="monika_1984",category=['literature'],prompt="Nineteen Eighty-Four",random=True))
